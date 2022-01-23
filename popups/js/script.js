@@ -1,10 +1,12 @@
 jQuery(($) => {
 
+        
     getQuotes('BTC', true, 3000);
 
     // auto-refresh 
 
     setInterval(() => {
+
 
         getQuotes('BTC', true, 30000);
 
@@ -12,9 +14,9 @@ jQuery(($) => {
 
     }, 3000)
 
-    $('#update').on('click', () => {
+    $('#teste').on('click', () => {
 
-        getQuotes('BTC', true, 30000);
+        console.log(getQuotes('BTC', true, 30000));
 
     })
 
@@ -30,7 +32,6 @@ jQuery(($) => {
      * 
      * 
      * */
-
 
     function getQuotes(coin, autorefresh, time) {
 
@@ -54,9 +55,27 @@ jQuery(($) => {
 
             }).then((data) => {
 
-                console.log(data.ticker.last)
+                let open   = data.ticker.open;
+                let current = data.ticker.last;
 
-                $('.price').text(`R$ ${data.ticker.last}`)
+                // let formated = current.substring(0,9);
+                //  console.log(str);
+
+                if(current < open){
+                    $('.arrpw-up').hide();
+                    $('.arrow-down').show();
+                }else{
+                    $('.arrow-down').hide();
+                    $('.arrow-up').show();
+                }
+
+                $('.price').unmask();
+
+                $('.price').text(`${current.substring(0,9)}`);
+
+
+                $('.price').mask('000,000.00', {reverse: true});
+
             }).catch((error) => {
 
                 console.log(`Houve um erro, tente novamente, error: ${error}`)
@@ -66,6 +85,8 @@ jQuery(($) => {
 
 
     }
+
+
 
 })
 
