@@ -14,63 +14,93 @@
 </head>
 
 <body>
-    <div id="app" class="card">
-        <header class="card-header">
-            <p class="card-header-title">Últimas Cotações</p>
-        </header>
-        <div class="card-content">
+    <div id="app" class="app">
 
-            <table class="table">
-                <thead>
-                    <th>Moeda</th>
-                    <th>Cotação</th>
-                    <th class="has-text-centered">Opções</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="tag is-warning"><b>BTC</b></span></td>
-                        <td>R$
-                            <span class="price"></span>
-                            <span hidden class="arrow-down">
-                                <i class="material-icons has-text-danger">arrow_drop_down</i>
-                            </span>
-                            <span hidden class="arrow-up">
-                                <i class="material-icons has-text-succes">arrow_drop_up</i>
-                            </span>
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title">Últimas Cotações</p>
+            </header>
+            <div class="card-content">
 
-                        </td>
-                        <td class="has-text-centered">
-                            <span class="set-alarm">
+                <table class="table">
+                    <thead>
+                        <th>Moeda</th>
+                        <th>Cotação</th>
+                        <th class="has-text-centered">Opções</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="tag is-warning"><b>BTC</b></span></td>
+                            <td>R$
+                                <span class="price"></span>
+                                <span hidden class="arrow-down">
+                                    <i class="material-icons has-text-danger">arrow_drop_down</i>
+                                </span>
+                                <span hidden class="arrow-up">
+                                    <i class="material-icons has-text-success">arrow_drop_up</i>
+                                </span>
 
-                                <a title="definir alarme"><i class="material-icons has-text-info">alarm</i></a>
+                            </td>
+                            <td class="has-text-centered">
+                                <span class="set-alarm">
 
-                            </span>
-                        </td>
-                    </tr>
-                </tbody>
+                                    <a class="alert" title="definir alarme"><i
+                                            class="material-icons has-text-info"><span class="material-icons-outlined">
+                                                notification_add
+                                            </span></i></a>
 
-            </table>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
 
         </div>
 
+        <article class="message is-hidden">
+            <div class="message-header">
+                <p>Novo alarme de Bitcoin</p>
+                <button class="delete is-small" aria-label="delete"></button>
+            </div>
+            <div class="message-body">
+                Novo alarme
+                <div class="field has-addons">
+                    <p class="control">
+                        <input class="input" type="text" placeholder="Valor">
+                    </p>
+                    <p class="control">
+                        <a class="button is-success">
+                            Add
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </article>
+
     </div>
+
     <style>
-        #app{
+        #app {
             width: 400px;
         }
 
-        table{
+        table {
             width: 100%;
         }
-        .card-header{
-            background-color: #7207c1;;
-            
-        }
-        .card-header p{
-            color:white;
+
+        .card-header,
+        .message-header {
+            background-color: #7207c1;
+            ;
+
         }
 
-
+        .card-header p {
+            color: white;
+        }
     </style>
 
 </body>

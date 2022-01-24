@@ -1,5 +1,17 @@
 jQuery(($) => {
 
+    $('.alert').on('click', function(){
+       $('.message').removeClass('is-hidden');
+       $('.card').addClass('is-hidden');
+
+    });
+
+    $('.delete').on('click', function(){
+        $('.card').removeClass('is-hidden');
+        $('.message').addClass('is-hidden');
+
+    })
+
         
     getQuotes('BTC', true, 3000);
 
@@ -83,9 +95,7 @@ jQuery(($) => {
 
         }
 
-
     }
-
 
 
 })
