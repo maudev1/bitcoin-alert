@@ -9,54 +9,37 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="./js/jquery.js"></script>
-    <script src="./js/jquery.mask.js"></script>
     <script src="./js/script.js"></script>
 </head>
 
 <body>
-    <div id="app" class="app">
+  
 
-        <div class="card">
-            <header class="card-header">
-                <p class="card-header-title">Últimas Cotações</p>
-            </header>
-            <div class="card-content">
+    <div id="app" class="card">
 
-                <table class="table">
-                    <thead>
-                        <th>Moeda</th>
-                        <th>Cotação</th>
-                        <th class="has-text-centered">Opções</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="tag is-warning"><b>BTC</b></span></td>
-                            <td>R$
-                                <span class="price"></span>
-                                <span hidden class="arrow-down">
-                                    <i class="material-icons has-text-danger">arrow_drop_down</i>
-                                </span>
-                                <span hidden class="arrow-up">
-                                    <i class="material-icons has-text-success">arrow_drop_up</i>
-                                </span>
+        <header class="card-header">
+            <p class="card-header-title">Últimas Cotações</p>
+            
+        </header>
 
-                            </td>
-                            <td class="has-text-centered">
-                                <span class="set-alarm">
+        <div class="card-content">
 
-                                    <a class="alert" title="definir alarme"><i
-                                            class="material-icons has-text-info"><span class="material-icons-outlined">
-                                                notification_add
-                                            </span></i></a>
-
-                                </span>
-                            </td>
-                        </tr>
-                    </tbody>
-
-                </table>
-
+            <table class="table">
+                <thead>
+                    <th>Moeda</th>
+                    <th>Cotação</th>
+                    <th class="has-text-centered">Opções</th>
+                </thead>
+                <tbody class="body">
+  
+                </tbody>
+            </table>
+            <div class="has-text-right">
+                <a class=""><i class="material-icons has-text-maudev">add</i></a>
             </div>
+
+            <progress class="progress is-large is-info is-hidden" max="100">60%</progress>
+
 
         </div>
 
@@ -91,15 +74,17 @@
             width: 100%;
         }
 
-        .card-header,
-        .message-header {
-            background-color: #7207c1;
+        .card-header {
+            background-color: rgb(138, 76, 196)
             ;
 
         }
 
         .card-header p {
             color: white;
+        }
+        .has-text-maudev{
+            color:rgb(138, 76, 196)
         }
     </style>
 
