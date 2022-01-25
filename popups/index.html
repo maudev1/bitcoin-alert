@@ -9,15 +9,19 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="./js/jquery.js"></script>
-    <script src="./js/jquery.mask.js"></script>
     <script src="./js/script.js"></script>
 </head>
 
 <body>
+  
+
     <div id="app" class="card">
+
         <header class="card-header">
             <p class="card-header-title">Últimas Cotações</p>
+            
         </header>
+
         <div class="card-content">
 
             <table class="table">
@@ -26,51 +30,42 @@
                     <th>Cotação</th>
                     <th class="has-text-centered">Opções</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="tag is-warning"><b>BTC</b></span></td>
-                        <td>R$
-                            <span class="price"></span>
-                            <span hidden class="arrow-down">
-                                <i class="material-icons has-text-danger">arrow_drop_down</i>
-                            </span>
-                            <span hidden class="arrow-up">
-                                <i class="material-icons has-text-succes">arrow_drop_up</i>
-                            </span>
-
-                        </td>
-                        <td class="has-text-centered">
-                            <span class="set-alarm">
-
-                                <a title="definir alarme"><i class="material-icons has-text-info">alarm</i></a>
-
-                            </span>
-                        </td>
-                    </tr>
+                <tbody class="body">
+  
                 </tbody>
-
             </table>
+            <div class="has-text-right">
+                <a class=""><i class="material-icons color-link">add</i></a>
+            </div>
+
+            <progress class="progress is-large is-info is-hidden" max="100">60%</progress>
+
 
         </div>
 
     </div>
+
     <style>
-        #app{
+        #app {
             width: 400px;
         }
 
-        table{
+        table {
             width: 100%;
         }
-        .card-header{
-            background-color: #7207c1;;
-            
-        }
-        .card-header p{
-            color:white;
+
+        .card-header {
+            background-color: #7c43a5;
+            ;
+
         }
 
-
+        .card-header p {
+            color: white;
+        }
+        .color-link{
+            color:#7c43a5
+        }
     </style>
 
 </body>

@@ -1,90 +1,88 @@
 jQuery(($) => {
 
-        
-    getQuotes('BTC', true, 3000);
+    let Cryptocurrencies = ['BTC', 'ETH', 'DOGE'];
+
+    getData(Cryptocurrencies);
 
     // auto-refresh 
 
     setInterval(() => {
+        
+        getData(Cryptocurrencies);
 
+    }, 20000)
 
-        getQuotes('BTC', true, 30000);
-
-        // console.log('');
-
-    }, 3000)
-
-    $('#teste').on('click', () => {
-
-        console.log(getQuotes('BTC', true, 30000));
-
-    })
 
     /**
      * 
      * 
      *
      * 
-     *  @param coin is a prefix of criptocurrency ex: BTC, ETH e etc...
-     *  @param autorefresh if set true, this function is auto refresh by time set in next param
-     *  @param time, is a time betweens time of executions! 
+     *  @param Cryptocurrencies array of cryptocurrency prefix
+     *  
      * 
      * 
      * 
      * */
 
-    function getQuotes(coin, autorefresh, time) {
 
-        if (autorefresh == true) {
+        function getData(Cryptocurrencies) {
 
-            setInterval(() => {
-                
-                getData(coin);
+            var quotes = '';
 
-            }, time)
+            $('.body').html('');
+            $('.progress').removeClass('is-hidden');
 
-        } else {
+            Cryptocurrencies.forEach(coin => {
 
-            getData(coin);
+                $.get(`https://www.mercadobitcoin.net/api/${coin}/ticker/`, {
+
+                }).then((data) => {
+
+                    let open = data.ticker.open;
+                    let current = data.ticker.last;
+
+                var formatter = new Intl.NumberFormat('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL',
+  
+                    });
+  
+                     quotes = $(`<tr>` +
+                        `<td><span class="tag is-warning"><b><a target="_BLANK" href="https://www.google.com.br/search?q=${coin}">${coin}</a></b></span></td>` +
+                        `<td>R$` +
+                        `<span class="price"> ${formatter.format(current)}</span>` +
+                        `<span class="arrow-up">` +
+                        `<i class="material-icons ${current < open ? 'has-text-success': 'has-text-danger'} ">${current < open ? 'arrow_drop_up': 'arrow_drop_down'}</i>` +
+                        `</span>` +
+                        `</td>` +
+                        `<td class="has-text-centered">` +
+                        `<span class="set-alarm">` +
+                        `<a title="definir alarme" ><i class="material-icons has-text-info">alarm</i></a>` +
+                        `</span>` +
+                        `</td>` +
+                        `</tr>`);
+
+                    $('.progress').addClass('is-hidden');
+
+                    quotes.appendTo('.body');
+
+
+                }).catch((error) => {
+
+                    $('.progress').removeClass('is-hidden');
+
+                    console.log(`Houve um erro, tente novamente, error: ${error}`)
+                })
+
+            });
+            
+            // $('.body').html(quotes);
 
         }
 
-        function getData(coin) {
 
-            $.get(`https://www.mercadobitcoin.net/api/${coin}/ticker/`, {
-
-            }).then((data) => {
-
-                let open   = data.ticker.open;
-                let current = data.ticker.last;
-
-                // let formated = current.substring(0,9);
-                //  console.log(str);
-
-                if(current < open){
-                    $('.arrpw-up').hide();
-                    $('.arrow-down').show();
-                }else{
-                    $('.arrow-down').hide();
-                    $('.arrow-up').show();
-                }
-
-                $('.price').unmask();
-
-                $('.price').text(`${current.substring(0,9)}`);
-
-
-                $('.price').mask('000,000.00', {reverse: true});
-
-            }).catch((error) => {
-
-                console.log(`Houve um erro, tente novamente, error: ${error}`)
-            })
-
-        }
-
-
-    }
+    
 
 
 
