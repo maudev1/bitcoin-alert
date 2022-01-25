@@ -49,8 +49,8 @@ jQuery(($) => {
                     });
   
                      quotes = $(`<tr>` +
-                        `<td><span class="tag is-warning"><b><a target="_BLANK" href="https://www.google.com.br/search?q=${coin}">${coin}</a></b></span></td>` +
-                        `<td>R$` +
+                        `<td><span class="tag is-warning"><b><a class="has-text-maudev" target="_BLANK" href="https://www.google.com.br/search?q=${coin}">${coin}</a></b></span></td>` +
+                        `<td>` +
                         `<span class="price"> ${formatter.format(current)}</span>` +
                         `<span class="arrow-up">` +
                         `<i class="material-icons ${current < open ? 'has-text-success': 'has-text-danger'} ">${current < open ? 'arrow_drop_up': 'arrow_drop_down'}</i>` +
@@ -58,7 +58,7 @@ jQuery(($) => {
                         `</td>` +
                         `<td class="has-text-centered">` +
                         `<span class="set-alarm">` +
-                        `<a title="definir alarme" ><i class="material-icons has-text-info">alarm</i></a>` +
+                        `<a title="definir alarme" ><i class="material-icons has-text-maudev">notifications_active</i></a>` +
                         `</span>` +
                         `</td>` +
                         `</tr>`);
