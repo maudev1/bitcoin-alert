@@ -1,18 +1,40 @@
+
 jQuery(($) => {
 
-    $('.alert').on('click', function(){
-       $('.message').removeClass('is-hidden');
-       $('.card').addClass('is-hidden');
+
+    $('#new').on('click', () => {
+
+        let value = $('#text').val();
+        
+        var port = chrome.extension.connect({
+            name: "Sample Communication"
+        });
+
+        port.postMessage(value);
+        port.onMessage.addListener(function (msg) {
+            console.log("message recieved" + msg);
+        });
+
+
+    })
+
+
+    $('.alert').on('click', function () {
+        $('.message').removeClass('is-hidden');
+        $('.card').addClass('is-hidden');
+
+
+
 
     });
 
-    $('.delete').on('click', function(){
+    $('.delete').on('click', function () {
         $('.card').removeClass('is-hidden');
         $('.message').addClass('is-hidden');
 
     })
 
-        
+
     getQuotes('BTC', true, 3000);
 
     // auto-refresh 
@@ -50,7 +72,7 @@ jQuery(($) => {
         if (autorefresh == true) {
 
             setInterval(() => {
-                
+
                 getData(coin);
 
             }, time)
@@ -67,26 +89,26 @@ jQuery(($) => {
 
             }).then((data) => {
 
-                let open   = data.ticker.open;
+                let open = data.ticker.open;
                 let current = data.ticker.last;
 
                 // let formated = current.substring(0,9);
                 //  console.log(str);
 
-                if(current < open){
+                if (current < open) {
                     $('.arrpw-up').hide();
                     $('.arrow-down').show();
-                }else{
+                } else {
                     $('.arrow-down').hide();
                     $('.arrow-up').show();
                 }
 
                 $('.price').unmask();
 
-                $('.price').text(`${current.substring(0,9)}`);
+                $('.price').text(`${current.substring(0, 9)}`);
 
 
-                $('.price').mask('000,000.00', {reverse: true});
+                $('.price').mask('000,000.00', { reverse: true });
 
             }).catch((error) => {
 
