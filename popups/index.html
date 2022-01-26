@@ -13,13 +13,13 @@
 </head>
 
 <body>
-  
+
 
     <div id="app" class="card">
 
         <header class="card-header">
             <p class="card-header-title">Últimas Cotações</p>
-            
+
         </header>
 
         <div class="card-content">
@@ -31,15 +31,10 @@
                     <th class="has-text-centered">Opções</th>
                 </thead>
                 <tbody class="body">
-  
+
                 </tbody>
             </table>
-            <div class="has-text-right">
-                <a class=""><i class="material-icons has-text-maudev">add</i></a>
-            </div>
-
-            <progress class="progress is-large is-info is-hidden" max="100">60%</progress>
-
+     
 
         </div>
 
@@ -65,9 +60,38 @@
 
     </div>
 
+    <div class="card">
+        <div class="card-content">
+            <div class="content">
+
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                      <div class="select is-fullwidth">
+                            <select name="" id="" class="coins">
+                                <option value="">Criptomoedas</option>
+                                <option value="BTC">BTC - Bitcoin</option>
+                                <option value="ETH">ETH - Ethereum</option>
+                                <option value="LTC">LTC - Litecoin</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button class="button is-maudev add">Adicionar</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <style>
         #app {
             width: 400px;
+            height: 400px;
         }
 
         table {
@@ -75,17 +99,24 @@
         }
 
         .card-header {
-            background-color: rgb(138, 76, 196)
-            ;
+            background-color: rgb(138, 76, 196);
 
         }
 
         .card-header p {
             color: white;
         }
-        .has-text-maudev{
-            color:rgb(138, 76, 196)
+
+        button.is-maudev {
+            color: white;
+            background-color: rgb(138, 76, 196) !important
         }
+
+        .has-text-maudev {
+            color: rgb(138, 76, 196)
+        }
+
+   
     </style>
 
 </body>
