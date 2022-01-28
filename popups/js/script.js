@@ -1,51 +1,62 @@
-
-
-
-
-
 jQuery(($) => {
 
+    let coins = [];
+
+    chrome.storage.local.get(['coins'], (result) => {
+
+        coins = result.coins
+
+        getData(coins);
+        
+    });
 
     $('.add').on('click', function () {
 
-        let coin = $('.coins').val();
+        let coinval = $('.coins').val();
 
-        chrome.storage.local.set({ coins: coin }, function () {
+        if (!coins.includes(coinval)) {
+            coins.push(coinval)
 
-        });
+            chrome.storage.local.set({ coins: coins }, function () { });
+        }
 
-        chrome.storage.local.get(['coins'], (result) => {
-            //console.log(result.coins)
-            let Data = [];
-    
-            Data.push(result.coins);
-    
-            getData(Data);
-        });
-
-        coin = '';
-    })
-
-    chrome.storage.local.get(['coins'], (result) => {
-        //console.log(result.coins)
-        let Data = [];
-
-        Data.push(result.coins);
-
-        getData(Data);
+        getData(coins);
     });
+
+    $('.remove').on('click', function () {
+
+        // let coinval = $('.coins').val();
+        let coinval = $(this).id();
+
+        console.log(coinval);
+
+        coins.forEach(function(i){
+            if(coins[i] === coinval){
+
+                coins.splice(i, 1);
+
+            }
+            
+        });
+
+        // if (!coins.includes(coinval)) {
+        //     coins.push(coinval)
+
+        //     chrome.storage.local.set({ coins: coins }, function () { });
+        // }
+
+        getData(coins);
+    });
+
+
 
     // auto-refresh 
 
     setInterval(() => {
 
         chrome.storage.local.get(['coins'], (result) => {
-            //console.log(result.coins)
-            let Data = [];
-    
-            Data.push(result.coins);
-    
-            getData(Data);
+
+            getData(result.coins);
         });
 
     }, 20000)
@@ -96,7 +107,7 @@ jQuery(($) => {
                     `</td>` +
                     `<td class="has-text-centered">` +
                     `<span class="set-alarm">` +
-                    `<a title="definir alarme" ><i class="material-icons has-text-maudev">notifications_active</i></a>` +
+                    `<a title="excluir moeda" ><i id="´${coin}´" class="material-icons has-text-danger remove">remove_circle</i></a>` +
                     `</span>` +
                     `</td>` +
                     `</tr>`);
@@ -107,8 +118,6 @@ jQuery(($) => {
 
 
             }).catch((error) => {
-
-
 
                 console.log(`Houve um erro, tente novamente, error: ${error}`)
             })
@@ -122,6 +131,4 @@ jQuery(($) => {
 
 
 
-
 })
-
