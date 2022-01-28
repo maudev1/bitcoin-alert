@@ -1,52 +1,40 @@
-
-
-
-
-
 jQuery(($) => {
 
+    //  clearAllData('coins');
+    
+    let favorites = [];
+
+    chrome.storage.local.get(['coins'], (result) => {
+
+        if(!result.coins){
+            saveInLocal(favorites);
+        }
+     
+        favorites = result.coins;
+        
+        getData(favorites);
+
+        console.log(result);
+    });
 
     $('.add').on('click', function () {
 
         let coin = $('.coins').val();
 
-        chrome.storage.local.set({ coins: coin }, function () {
+        if(!favorites.includes(coin)){
 
-        });
+            favorites.push(coin);
+        }
 
-        chrome.storage.local.get(['coins'], (result) => {
-            //console.log(result.coins)
-            let Data = [];
-    
-            Data.push(result.coins);
-    
-            getData(Data);
-        });
+        saveInLocal(favorites);
 
-        coin = '';
+        getData(favorites);
+
     })
-
-    chrome.storage.local.get(['coins'], (result) => {
-        //console.log(result.coins)
-        let Data = [];
-
-        Data.push(result.coins);
-
-        getData(Data);
-    });
-
-    // auto-refresh 
 
     setInterval(() => {
 
-        chrome.storage.local.get(['coins'], (result) => {
-            //console.log(result.coins)
-            let Data = [];
-    
-            Data.push(result.coins);
-    
-            getData(Data);
-        });
+        getData(favorites);
 
     }, 20000)
 
@@ -64,14 +52,14 @@ jQuery(($) => {
      * */
 
 
-    function getData(Cryptocurrencies) {
+    function getData(values) {
 
         var quotes = '';
 
         $('.body').html('');
         $('.progress').removeClass('is-hidden');
 
-        Cryptocurrencies.forEach(coin => {
+        values.forEach(coin => {
 
             $.get(`https://www.mercadobitcoin.net/api/${coin}/ticker/`, {
 
@@ -108,15 +96,30 @@ jQuery(($) => {
 
             }).catch((error) => {
 
-
-
                 console.log(`Houve um erro, tente novamente, error: ${error}`)
             })
 
         });
 
-        // $('.body').html(quotes);
 
+    }
+
+    function saveInLocal(values){
+
+        chrome.storage.local.set({ coins: values }, function () {
+
+        });
+
+    }
+
+    function clearAllData(values){
+        chrome.storage.local.remove([`${values}`],function(){
+            var error = chrome.runtime.lastError;
+               if (error) {
+                   console.error(error);
+               }
+           })
+    
     }
 
 
