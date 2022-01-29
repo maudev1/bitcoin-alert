@@ -1,0 +1,36 @@
+#app {
+    width: 500px;
+    height:auto;
+    
+
+}
+.table-container{
+    height: 200px;
+    overflow: scroll;
+}
+
+table {
+    width: 100%;
+}
+
+.card-header {
+    background-color: rgb(138, 76, 196);
+
+}
+
+.card-header p {
+    color: white;
+}
+
+button.is-maudev {
+    color: white;
+    background-color: rgb(138, 76, 196) !important
+}
+
+.has-text-maudev {
+    color: rgb(138, 76, 196)
+}
+
+.price, .alarm{
+    font-size: 12px;
+}
