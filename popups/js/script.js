@@ -1,5 +1,26 @@
 jQuery(($) => {
 
+    // $("#price").inputmask('decimal', {
+    //     'alias': 'numeric',
+    //     'groupSeparator': ',',
+    //     'autoGroup': true,
+    //     'digits': 2,
+    //     'radixPoint': ".",
+    //     'digitsOptional': false,
+    //     'allowMinus': false,
+    //     // 'prefix': 'R$ ',
+    //     'placeholder': ''
+    // });
+
+    $('.color').on('change',function(){
+
+        console.log($(this).val());
+
+        $('.is-maudev').css('background-color',`${$(this).val()}`);
+
+
+    })
+
     var formatter = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
@@ -33,6 +54,10 @@ jQuery(($) => {
 
         let coin = $('.coins').val();
         let price = $('#price').val();
+
+        console.log(price);
+
+        //throw 'teste';
 
         let coins = [coin, price];
 

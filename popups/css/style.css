@@ -22,10 +22,10 @@ table {
     color: white;
 }
 
-button.is-maudev {
+/* button.is-maudev {
     color: white;
     background-color: rgb(238, 69, 69) !important
-}
+} */
 
 .has-text-maudev {
     color: rgb(238, 69, 69)
