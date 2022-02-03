@@ -7,7 +7,6 @@ jQuery(($) => {
     });
 
     let favorites = [];
-
     
     chrome.storage.local.get(['coins'], (result) => {
 
@@ -36,8 +35,6 @@ jQuery(($) => {
         let price = $('#price').val();
 
         let coins = [coin, price];
-
-        console.log(coins);
 
         if (!favorites.includes(coins)) {
             
@@ -103,7 +100,7 @@ jQuery(($) => {
                 let current = data.ticker.last;
 
                 quotes = $(`<tr>` +
-                    `<td><span class="tag is-warning"><b><a class="has-text-maudev" target="_BLANK" href="https://www.google.com.br/search?q=${coin[0]}">${coin[0]}</a></b></span></td>` +
+                    `<td><span class="tag is-warning"><b><a class="has-text-dark" target="_BLANK" href="https://www.google.com.br/search?q=${coin[0]}">${coin[0]}</a></b></span></td>` +
                     `<td>`+
                     `<span class="alarm"> ${formatter.format(coin[1])}</span>` +
                     `</td>`+

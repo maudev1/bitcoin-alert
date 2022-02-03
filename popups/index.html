@@ -17,68 +17,79 @@
 
 <body>
 
+    <nav class="navbar is-dark  " role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <span style="padding-right: 10px;">
+                    <img src="../bitcoin.png" alt="">
+                </span>
 
-    <div id="app" >
+                <b>Meus Alarmes</b>
 
-        <header class="card-header">
-            <p class="card-header-title">Meus Alarmes</p>
+            </div>
+            <span>
+            </span>
+        </div>
+        <div class="navbar-menu">
+            
+          <!-- navbar start, navbar end -->
+        </div>
+       
+    </nav>
+    <div id="app" class="section">
 
-        </header>
+        <table class="table is-narrow is-hoverable is-fullwidth">
+            <thead>
+                <th>Moeda</th>
+                <th>Alarme</th>
+                <th>Cotação</th>
+                <th class="has-text-centered">Opções</th>
+            </thead>
+        </table>
+        <div class="table-container">
+            <table
+                class="table is-hoverable is-striped is-narrow  is-fullwidth">
 
-        <div class="card-content">
-            <table class="table is-narrow is-hoverable is-fullwidth">
-                <thead>
-                    <th>Moeda</th>
-                    <th>Alarme</th>
-                    <th>Cotação</th>
-                    <th class="has-text-centered">Opções</th>
-                </thead>
+                <tbody class="body">
+
+                </tbody>
             </table>
-            <div class="table-container">
-
-                <table
-                    class="table is-hoverable is-striped is-narrow  is-fullwidth">
-
-                    <tbody class="body">
-
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="field has-addons">
-                <div class="control is-expanded has-icons-left">
-                    <div class="select is-fullwidth is-small">
-                        <select name="" id="" class="coins">
-                            <option value="">Criptomoedas</option>
-                            <option value="BTC"><i class="cf cf-btc"></i> Bitcoin</option>
-                            <option value="ETH"><i class="cf cf-eth"></i> Ethereum</option>
-                            <option value="LTC"><i class="cf cf-ltc"></i> Litecoin</option>
-                            <option value="DOGE"><i class="cf cf-doge"></i> DogeCoin</option>
-                        </select>
-
-                    </div>
-                    <span class="icon is-small is-left">
-                        <i class="material-icons">currency_bitcoin</i>
-                    </span>
-                </div>
-
-                <div class="control has-icons-left">
-                    <input id="price" type="text" class="input is-small">
-                    <span class="icon is-small is-left">
-                        <i class="material-icons">price_change</i>
-                    </span>
-                </div>
-                <div class="control">
-                    <button class="button is-maudev add is-small"><i class="material-icons">add</button>
-                </div>
-
-            </div>
-
-    
-            <a title="Apagar todos alarmes" class="has-text-danger reset-data"><i class="material-icons">delete</i></a>
         </div>
 
-    </div>
+        <div class="field has-addons">
+            <div class="control is-expanded has-icons-left">
+                <div class="select is-fullwidth is-small">
+                    <select name="" id="" class="coins">
+                        <option value="">Criptomoedas</option>
+                        <option value="BTC"><i class="cf cf-btc"></i> Bitcoin</option>
+                        <option value="ETH"><i class="cf cf-eth"></i> Ethereum</option>
+                        <option value="LTC"><i class="cf cf-ltc"></i> Litecoin</option>
+                        <option value="DOGE"><i class="cf cf-doge"></i> DogeCoin</option>
+                    </select>
+
+                </div>
+                <span class="icon is-small is-left">
+                    <i class="material-icons">currency_bitcoin</i>
+                </span>
+               
+
+            </div>
+
+            <div class="control has-icons-left">
+                <input id="price" type="text" class="input is-small">
+                <span class="icon is-small is-left">
+                    <i class="material-icons">price_change</i>
+                </span>
+            </div>
+            <div class="control">
+                <button class="button is-dark add is-small"><i class="material-icons">add</button>
+            </div>
+
+        </div>
+
+        <a title="Apagar todos alarmes" class="has-text-danger reset-data"><i class="material-icons">delete</i></a>
+
+
 
 </body>
 

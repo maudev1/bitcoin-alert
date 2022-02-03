@@ -24,11 +24,11 @@ table {
 
 button.is-maudev {
     color: white;
-    background-color: rgb(138, 76, 196) !important
+    background-color: rgb(238, 69, 69) !important
 }
 
 .has-text-maudev {
-    color: rgb(138, 76, 196)
+    color: rgb(238, 69, 69)
 }
 
 .price, .alarm{

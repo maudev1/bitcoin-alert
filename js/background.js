@@ -1,27 +1,74 @@
-
 setInterval(() => {
 
-    getData('BTC');
+    chrome.storage.local.get(['coins'], (result) => {
 
-}, 2000)
+        if (result.coins) {
 
-function getData(coin) {
+            result.coins.forEach(alarm => {
+
+                GetData(alarm[0]);
+
+            });
+
+        }
+
+
+    });
+
+    // console.log(GetData('BTC'));
+
+}, 2000);
+
+
+function GetData(alarm) {
 
     let request = new XMLHttpRequest();
 
     if (!request) {
         console.log('Não foi possivel criar uma instancia XMLHTTP...');
+
+        throw ('Não foi possivel criar uma instancia XMLHTTP...');
     }
+
     request.onreadystatechange = messages;
-    request.open('GET', `https://www.mercadobitcoin.net/api/${coin}/ticker/`, true);
-    request.send()
+    request.open('GET', `https://www.mercadobitcoin.net/api/${alarm}/ticker/`, true);
+    request.send();
+
+    var formatter = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+
+    });
+
 
     function messages() {
 
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
 
-                console.log(request.responseText);
+                let response = JSON.parse(request.response);
+
+
+                chrome.storage.local.get(['coins'], (result) => {
+
+                    if (result.coins) {
+
+                        result.coins.forEach(alarm => {
+
+                            if (response.ticker.last == alarm[1]) {
+
+                                console.log(response.ticker.last);
+
+                                alertMessage(`A cotação do ${alarm[0]} está em ${formatter.format(response.ticker.last)}`, true);
+
+                            }
+
+                        });
+
+                    }
+
+
+                });
 
             } else {
 
@@ -31,21 +78,32 @@ function getData(coin) {
 
     }
 
-    function alert() {
+    function alertMessage(alarm, audio) {
 
         chrome.notifications.create('test', {
             type: 'basic',
-            iconUrl: 'icon.png',
-            title: 'Test Message',
-            message: 'You are awesome!',
+            iconUrl: 'bitcoin.png',
+            title: 'Atenção',
+            message: alarm,
             priority: 2
         });
 
+        if(audio == true){
+            audioNotification();
+        }
+
+
+    }
+
+    function audioNotification() {
+       
+            var yourSound = new Audio('../sounds/mystery2.wav');
+            yourSound.play();
+        
     }
 
 
+
 }
-
-
 
 
