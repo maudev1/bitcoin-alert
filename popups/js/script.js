@@ -129,7 +129,7 @@ jQuery(($) => {
                 if (current > priceAlert) {
                     let x = current - priceAlert;
                     let y = x / current * 100;
-                    percent = y.toFixed(2) + ' %';
+                    percent = y.toFixed(2);
 
                 }
                 else {
