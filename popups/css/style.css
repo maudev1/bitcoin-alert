@@ -22,15 +22,14 @@ table {
     color: white;
 }
 
-/* button.is-maudev {
-    color: white;
-    background-color: rgb(238, 69, 69) !important
-} */
-
 .has-text-maudev {
     color: rgb(238, 69, 69)
 }
 
 .price, .alarm{
     font-size: 12px;
+}
+
+.section {
+    padding: 1.5rem 1.5rem !important;
 }

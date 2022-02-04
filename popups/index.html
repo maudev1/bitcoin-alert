@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BitCoin Alert</title>
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.cryptofonts.com/1.3.5/cryptofont.css">
+    
+    <!-- JS -->
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery.inputmask.min.js"></script>
     <script src="./js/script.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.cryptofonts.com/1.3.5/cryptofont.css">
 </head>
 
 <body>
@@ -42,7 +45,7 @@ is-white -->
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-              </a>
+            </a>
         </div>
        
         <div class="navbar-menu">
@@ -55,31 +58,30 @@ is-white -->
                 </div>
 
             </div>
-
-
-
-            <!-- navbar start, navbar end -->
         </div>
 
     </nav>
     <div id="app" class="section">
 
-        <table class="table is-narrow is-hoverable is-fullwidth">
+        <table id="table_id" class="table is-narrow is-hoverable is-fullwidth display">
             <thead>
                 <th>Moeda</th>
                 <th>Alarme</th>
                 <th>Cotação</th>
                 <th class="has-text-centered">Opções</th>
             </thead>
+            <tbody class="body">
+
+            </tbody>
         </table>
-        <div class="table-container">
+        <!-- <div class="table-container">
             <table class="table is-hoverable is-striped is-narrow  is-fullwidth">
 
                 <tbody class="body">
 
                 </tbody>
             </table>
-        </div>
+        </div> -->
 
         <div class="field has-addons">
             <div class="control is-expanded has-icons-left">
