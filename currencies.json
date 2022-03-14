@@ -1,0 +1,1594 @@
+[
+    {
+        "prefix": "BTC",
+        "name": "bitcoin"
+    },
+    {
+        "prefix": "LTC",
+        "name": "litecoin"
+    },
+    {
+        "prefix": "ETH",
+        "name": "ethereum"
+    },
+    {
+        "prefix": "NEO",
+        "name": ""
+    },
+    {
+        "prefix": "BNB",
+        "name": ""
+    },
+    {
+        "prefix": "QTUM",
+        "name": ""
+    },
+    {
+        "prefix": "EOS",
+        "name": ""
+    },
+    {
+        "prefix": "SNT",
+        "name": ""
+    },
+    {
+        "prefix": "BNT",
+        "name": ""
+    },
+    {
+        "prefix": "GAS",
+        "name": ""
+    },
+    {
+        "prefix": "BCC",
+        "name": ""
+    },
+    {
+        "prefix": "USDT",
+        "name": ""
+    },
+    {
+        "prefix": "HSR",
+        "name": ""
+    },
+    {
+        "prefix": "OAX",
+        "name": ""
+    },
+    {
+        "prefix": "DNT",
+        "name": ""
+    },
+    {
+        "prefix": "MCO",
+        "name": ""
+    },
+    {
+        "prefix": "ICN",
+        "name": ""
+    },
+    {
+        "prefix": "ZRX",
+        "name": ""
+    },
+    {
+        "prefix": "OMG",
+        "name": ""
+    },
+    {
+        "prefix": "WTC",
+        "name": ""
+    },
+    {
+        "prefix": "YOYO",
+        "name": ""
+    },
+    {
+        "prefix": "LRC",
+        "name": ""
+    },
+    {
+        "prefix": "TRX",
+        "name": ""
+    },
+    {
+        "prefix": "SNGLS",
+        "name": ""
+    },
+    {
+        "prefix": "STRAT",
+        "name": ""
+    },
+    {
+        "prefix": "BQX",
+        "name": ""
+    },
+    {
+        "prefix": "FUN",
+        "name": ""
+    },
+    {
+        "prefix": "KNC",
+        "name": ""
+    },
+    {
+        "prefix": "CDT",
+        "name": ""
+    },
+    {
+        "prefix": "XVG",
+        "name": ""
+    },
+    {
+        "prefix": "IOTA",
+        "name": ""
+    },
+    {
+        "prefix": "SNM",
+        "name": ""
+    },
+    {
+        "prefix": "LINK",
+        "name": ""
+    },
+    {
+        "prefix": "CVC",
+        "name": ""
+    },
+    {
+        "prefix": "TNT",
+        "name": ""
+    },
+    {
+        "prefix": "REP",
+        "name": ""
+    },
+    {
+        "prefix": "MDA",
+        "name": ""
+    },
+    {
+        "prefix": "MTL",
+        "name": ""
+    },
+    {
+        "prefix": "SALT",
+        "name": ""
+    },
+    {
+        "prefix": "NULS",
+        "name": ""
+    },
+    {
+        "prefix": "SUB",
+        "name": ""
+    },
+    {
+        "prefix": "STX",
+        "name": ""
+    },
+    {
+        "prefix": "MTH",
+        "name": ""
+    },
+    {
+        "prefix": "ADX",
+        "name": ""
+    },
+    {
+        "prefix": "ETC",
+        "name": ""
+    },
+    {
+        "prefix": "ENG",
+        "name": ""
+    },
+    {
+        "prefix": "ZEC",
+        "name": ""
+    },
+    {
+        "prefix": "AST",
+        "name": ""
+    },
+    {
+        "prefix": "GNT",
+        "name": ""
+    },
+    {
+        "prefix": "DGD",
+        "name": ""
+    },
+    {
+        "prefix": "BAT",
+        "name": ""
+    },
+    {
+        "prefix": "DASH",
+        "name": ""
+    },
+    {
+        "prefix": "POWR",
+        "name": ""
+    },
+    {
+        "prefix": "BTG",
+        "name": ""
+    },
+    {
+        "prefix": "REQ",
+        "name": ""
+    },
+    {
+        "prefix": "XMR",
+        "name": ""
+    },
+    {
+        "prefix": "EVX",
+        "name": ""
+    },
+    {
+        "prefix": "VIB",
+        "name": ""
+    },
+    {
+        "prefix": "ENJ",
+        "name": ""
+    },
+    {
+        "prefix": "VEN",
+        "name": ""
+    },
+    {
+        "prefix": "ARK",
+        "name": ""
+    },
+    {
+        "prefix": "XRP",
+        "name": ""
+    },
+    {
+        "prefix": "MOD",
+        "name": ""
+    },
+    {
+        "prefix": "STORJ",
+        "name": ""
+    },
+    {
+        "prefix": "KMD",
+        "name": ""
+    },
+    {
+        "prefix": "RCN",
+        "name": ""
+    },
+    {
+        "prefix": "EDO",
+        "name": ""
+    },
+    {
+        "prefix": "DATA",
+        "name": ""
+    },
+    {
+        "prefix": "DLT",
+        "name": ""
+    },
+    {
+        "prefix": "MANA",
+        "name": ""
+    },
+    {
+        "prefix": "PPT",
+        "name": ""
+    },
+    {
+        "prefix": "RDN",
+        "name": ""
+    },
+    {
+        "prefix": "GXS",
+        "name": ""
+    },
+    {
+        "prefix": "AMB",
+        "name": ""
+    },
+    {
+        "prefix": "ARN",
+        "name": ""
+    },
+    {
+        "prefix": "BCPT",
+        "name": ""
+    },
+    {
+        "prefix": "CND",
+        "name": ""
+    },
+    {
+        "prefix": "GVT",
+        "name": ""
+    },
+    {
+        "prefix": "POE",
+        "name": ""
+    },
+    {
+        "prefix": "BTS",
+        "name": ""
+    },
+    {
+        "prefix": "FUEL",
+        "name": ""
+    },
+    {
+        "prefix": "XZC",
+        "name": ""
+    },
+    {
+        "prefix": "QSP",
+        "name": ""
+    },
+    {
+        "prefix": "LSK",
+        "name": ""
+    },
+    {
+        "prefix": "BCD",
+        "name": ""
+    },
+    {
+        "prefix": "TNB",
+        "name": ""
+    },
+    {
+        "prefix": "ADA",
+        "name": ""
+    },
+    {
+        "prefix": "LEND",
+        "name": ""
+    },
+    {
+        "prefix": "XLM",
+        "name": ""
+    },
+    {
+        "prefix": "CMT",
+        "name": ""
+    },
+    {
+        "prefix": "WAVES",
+        "name": ""
+    },
+    {
+        "prefix": "WABI",
+        "name": ""
+    },
+    {
+        "prefix": "GTO",
+        "name": ""
+    },
+    {
+        "prefix": "ICX",
+        "name": ""
+    },
+    {
+        "prefix": "OST",
+        "name": ""
+    },
+    {
+        "prefix": "ELF",
+        "name": ""
+    },
+    {
+        "prefix": "AION",
+        "name": ""
+    },
+    {
+        "prefix": "WINGS",
+        "name": ""
+    },
+    {
+        "prefix": "BRD",
+        "name": ""
+    },
+    {
+        "prefix": "NEBL",
+        "name": ""
+    },
+    {
+        "prefix": "NAV",
+        "name": ""
+    },
+    {
+        "prefix": "VIBE",
+        "name": ""
+    },
+    {
+        "prefix": "LUN",
+        "name": ""
+    },
+    {
+        "prefix": "TRIG",
+        "name": ""
+    },
+    {
+        "prefix": "APPC",
+        "name": ""
+    },
+    {
+        "prefix": "CHAT",
+        "name": ""
+    },
+    {
+        "prefix": "RLC",
+        "name": ""
+    },
+    {
+        "prefix": "INS",
+        "name": ""
+    },
+    {
+        "prefix": "PIVX",
+        "name": ""
+    },
+    {
+        "prefix": "IOST",
+        "name": ""
+    },
+    {
+        "prefix": "STEEM",
+        "name": ""
+    },
+    {
+        "prefix": "NANO",
+        "name": ""
+    },
+    {
+        "prefix": "AE",
+        "name": ""
+    },
+    {
+        "prefix": "VIA",
+        "name": ""
+    },
+    {
+        "prefix": "BLZ",
+        "name": ""
+    },
+    {
+        "prefix": "SYS",
+        "name": ""
+    },
+    {
+        "prefix": "RPX",
+        "name": ""
+    },
+    {
+        "prefix": "NCASH",
+        "name": ""
+    },
+    {
+        "prefix": "POA",
+        "name": ""
+    },
+    {
+        "prefix": "ONT",
+        "name": ""
+    },
+    {
+        "prefix": "ZIL",
+        "name": ""
+    },
+    {
+        "prefix": "STORM",
+        "name": ""
+    },
+    {
+        "prefix": "XEM",
+        "name": ""
+    },
+    {
+        "prefix": "WAN",
+        "name": ""
+    },
+    {
+        "prefix": "WPR",
+        "name": ""
+    },
+    {
+        "prefix": "QLC",
+        "name": ""
+    },
+    {
+        "prefix": "GRS",
+        "name": ""
+    },
+    {
+        "prefix": "CLOAK",
+        "name": ""
+    },
+    {
+        "prefix": "LOOM",
+        "name": ""
+    },
+    {
+        "prefix": "BCN",
+        "name": ""
+    },
+    {
+        "prefix": "TUSD",
+        "name": ""
+    },
+    {
+        "prefix": "ZEN",
+        "name": ""
+    },
+    {
+        "prefix": "SKY",
+        "name": ""
+    },
+    {
+        "prefix": "THETA",
+        "name": ""
+    },
+    {
+        "prefix": "IOTX",
+        "name": ""
+    },
+    {
+        "prefix": "QKC",
+        "name": ""
+    },
+    {
+        "prefix": "AGI",
+        "name": ""
+    },
+    {
+        "prefix": "NXS",
+        "name": ""
+    },
+    {
+        "prefix": "SC",
+        "name": ""
+    },
+    {
+        "prefix": "NPXS",
+        "name": ""
+    },
+    {
+        "prefix": "KEY",
+        "name": ""
+    },
+    {
+        "prefix": "NAS",
+        "name": ""
+    },
+    {
+        "prefix": "MFT",
+        "name": ""
+    },
+    {
+        "prefix": "DENT",
+        "name": ""
+    },
+    {
+        "prefix": "IQ",
+        "name": ""
+    },
+    {
+        "prefix": "ARDR",
+        "name": ""
+    },
+    {
+        "prefix": "HOT",
+        "name": ""
+    },
+    {
+        "prefix": "VET",
+        "name": ""
+    },
+    {
+        "prefix": "DOCK",
+        "name": ""
+    },
+    {
+        "prefix": "POLY",
+        "name": ""
+    },
+    {
+        "prefix": "VTHO",
+        "name": ""
+    },
+    {
+        "prefix": "ONG",
+        "name": ""
+    },
+    {
+        "prefix": "PHX",
+        "name": ""
+    },
+    {
+        "prefix": "HC",
+        "name": ""
+    },
+    {
+        "prefix": "GO",
+        "name": ""
+    },
+    {
+        "prefix": "PAX",
+        "name": ""
+    },
+    {
+        "prefix": "RVN",
+        "name": ""
+    },
+    {
+        "prefix": "DCR",
+        "name": ""
+    },
+    {
+        "prefix": "USDC",
+        "name": ""
+    },
+    {
+        "prefix": "MITH",
+        "name": ""
+    },
+    {
+        "prefix": "BCHABC",
+        "name": ""
+    },
+    {
+        "prefix": "BCHSV",
+        "name": ""
+    },
+    {
+        "prefix": "REN",
+        "name": ""
+    },
+    {
+        "prefix": "BTT",
+        "name": ""
+    },
+    {
+        "prefix": "USDS",
+        "name": ""
+    },
+    {
+        "prefix": "FET",
+        "name": ""
+    },
+    {
+        "prefix": "TFUEL",
+        "name": ""
+    },
+    {
+        "prefix": "CELR",
+        "name": ""
+    },
+    {
+        "prefix": "MATIC",
+        "name": ""
+    },
+    {
+        "prefix": "ATOM",
+        "name": ""
+    },
+    {
+        "prefix": "PHB",
+        "name": ""
+    },
+    {
+        "prefix": "ONE",
+        "name": ""
+    },
+    {
+        "prefix": "FTM",
+        "name": ""
+    },
+    {
+        "prefix": "BTCB",
+        "name": ""
+    },
+    {
+        "prefix": "USDSB",
+        "name": ""
+    },
+    {
+        "prefix": "CHZ",
+        "name": ""
+    },
+    {
+        "prefix": "COS",
+        "name": ""
+    },
+    {
+        "prefix": "ALGO",
+        "name": ""
+    },
+    {
+        "prefix": "ERD",
+        "name": ""
+    },
+    {
+        "prefix": "DOGE",
+        "name": "dogecoin"
+    },
+    {
+        "prefix": "BGBP",
+        "name": ""
+    },
+    {
+        "prefix": "DUSK",
+        "name": ""
+    },
+    {
+        "prefix": "ANKR",
+        "name": ""
+    },
+    {
+        "prefix": "WIN",
+        "name": ""
+    },
+    {
+        "prefix": "TUSDB",
+        "name": ""
+    },
+    {
+        "prefix": "COCOS",
+        "name": ""
+    },
+    {
+        "prefix": "PERL",
+        "name": ""
+    },
+    {
+        "prefix": "TOMO",
+        "name": ""
+    },
+    {
+        "prefix": "BUSD",
+        "name": ""
+    },
+    {
+        "prefix": "BAND",
+        "name": ""
+    },
+    {
+        "prefix": "BEAM",
+        "name": ""
+    },
+    {
+        "prefix": "HBAR",
+        "name": ""
+    },
+    {
+        "prefix": "XTZ",
+        "name": ""
+    },
+    {
+        "prefix": "NGN",
+        "name": ""
+    },
+    {
+        "prefix": "DGB",
+        "name": ""
+    },
+    {
+        "prefix": "NKN",
+        "name": ""
+    },
+    {
+        "prefix": "GBP",
+        "name": ""
+    },
+    {
+        "prefix": "EUR",
+        "name": ""
+    },
+    {
+        "prefix": "KAVA",
+        "name": ""
+    },
+    {
+        "prefix": "RUB",
+        "name": ""
+    },
+    {
+        "prefix": "UAH",
+        "name": ""
+    },
+    {
+        "prefix": "ARPA",
+        "name": ""
+    },
+    {
+        "prefix": "TRY",
+        "name": ""
+    },
+    {
+        "prefix": "CTXC",
+        "name": ""
+    },
+    {
+        "prefix": "AERGO",
+        "name": ""
+    },
+    {
+        "prefix": "BCH",
+        "name": ""
+    },
+    {
+        "prefix": "TROY",
+        "name": ""
+    },
+    {
+        "prefix": "BRL",
+        "name": ""
+    },
+    {
+        "prefix": "VITE",
+        "name": ""
+    },
+    {
+        "prefix": "FTT",
+        "name": ""
+    },
+    {
+        "prefix": "AUD",
+        "name": ""
+    },
+    {
+        "prefix": "OGN",
+        "name": ""
+    },
+    {
+        "prefix": "DREP",
+        "name": ""
+    },
+    {
+        "prefix": "BULL",
+        "name": ""
+    },
+    {
+        "prefix": "BEAR",
+        "name": ""
+    },
+    {
+        "prefix": "ETHBULL",
+        "name": ""
+    },
+    {
+        "prefix": "ETHBEAR",
+        "name": ""
+    },
+    {
+        "prefix": "XRPBULL",
+        "name": ""
+    },
+    {
+        "prefix": "XRPBEAR",
+        "name": ""
+    },
+    {
+        "prefix": "EOSBULL",
+        "name": ""
+    },
+    {
+        "prefix": "EOSBEAR",
+        "name": ""
+    },
+    {
+        "prefix": "TCT",
+        "name": ""
+    },
+    {
+        "prefix": "WRX",
+        "name": ""
+    },
+    {
+        "prefix": "LTO",
+        "name": ""
+    },
+    {
+        "prefix": "ZAR",
+        "name": ""
+    },
+    {
+        "prefix": "MBL",
+        "name": ""
+    },
+    {
+        "prefix": "COTI",
+        "name": ""
+    },
+    {
+        "prefix": "BKRW",
+        "name": ""
+    },
+    {
+        "prefix": "BNBBULL",
+        "name": ""
+    },
+    {
+        "prefix": "BNBBEAR",
+        "name": ""
+    },
+    {
+        "prefix": "HIVE",
+        "name": ""
+    },
+    {
+        "prefix": "STPT",
+        "name": ""
+    },
+    {
+        "prefix": "SOL",
+        "name": ""
+    },
+    {
+        "prefix": "IDRT",
+        "name": ""
+    },
+    {
+        "prefix": "CTSI",
+        "name": ""
+    },
+    {
+        "prefix": "CHR",
+        "name": ""
+    },
+    {
+        "prefix": "BTCUP",
+        "name": ""
+    },
+    {
+        "prefix": "BTCDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "HNT",
+        "name": ""
+    },
+    {
+        "prefix": "JST",
+        "name": ""
+    },
+    {
+        "prefix": "FIO",
+        "name": ""
+    },
+    {
+        "prefix": "BIDR",
+        "name": ""
+    },
+    {
+        "prefix": "STMX",
+        "name": ""
+    },
+    {
+        "prefix": "MDT",
+        "name": ""
+    },
+    {
+        "prefix": "PNT",
+        "name": ""
+    },
+    {
+        "prefix": "COMP",
+        "name": ""
+    },
+    {
+        "prefix": "IRIS",
+        "name": ""
+    },
+    {
+        "prefix": "MKR",
+        "name": ""
+    },
+    {
+        "prefix": "SXP",
+        "name": ""
+    },
+    {
+        "prefix": "SNX",
+        "name": ""
+    },
+    {
+        "prefix": "DAI",
+        "name": ""
+    },
+    {
+        "prefix": "ETHUP",
+        "name": ""
+    },
+    {
+        "prefix": "ETHDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "ADAUP",
+        "name": ""
+    },
+    {
+        "prefix": "ADADOWN",
+        "name": ""
+    },
+    {
+        "prefix": "LINKUP",
+        "name": ""
+    },
+    {
+        "prefix": "LINKDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "DOT",
+        "name": ""
+    },
+    {
+        "prefix": "RUNE",
+        "name": ""
+    },
+    {
+        "prefix": "BNBUP",
+        "name": ""
+    },
+    {
+        "prefix": "BNBDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "XTZUP",
+        "name": ""
+    },
+    {
+        "prefix": "XTZDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "AVA",
+        "name": ""
+    },
+    {
+        "prefix": "BAL",
+        "name": ""
+    },
+    {
+        "prefix": "YFI",
+        "name": ""
+    },
+    {
+        "prefix": "SRM",
+        "name": ""
+    },
+    {
+        "prefix": "ANT",
+        "name": ""
+    },
+    {
+        "prefix": "CRV",
+        "name": ""
+    },
+    {
+        "prefix": "SAND",
+        "name": ""
+    },
+    {
+        "prefix": "OCEAN",
+        "name": ""
+    },
+    {
+        "prefix": "NMR",
+        "name": ""
+    },
+    {
+        "prefix": "LUNA",
+        "name": ""
+    },
+    {
+        "prefix": "IDEX",
+        "name": ""
+    },
+    {
+        "prefix": "RSR",
+        "name": ""
+    },
+    {
+        "prefix": "PAXG",
+        "name": ""
+    },
+    {
+        "prefix": "WNXM",
+        "name": ""
+    },
+    {
+        "prefix": "TRB",
+        "name": ""
+    },
+    {
+        "prefix": "EGLD",
+        "name": ""
+    },
+    {
+        "prefix": "BZRX",
+        "name": ""
+    },
+    {
+        "prefix": "WBTC",
+        "name": ""
+    },
+    {
+        "prefix": "KSM",
+        "name": ""
+    },
+    {
+        "prefix": "SUSHI",
+        "name": ""
+    },
+    {
+        "prefix": "YFII",
+        "name": ""
+    },
+    {
+        "prefix": "DIA",
+        "name": ""
+    },
+    {
+        "prefix": "BEL",
+        "name": ""
+    },
+    {
+        "prefix": "UMA",
+        "name": ""
+    },
+    {
+        "prefix": "EOSUP",
+        "name": ""
+    },
+    {
+        "prefix": "TRXUP",
+        "name": ""
+    },
+    {
+        "prefix": "EOSDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "TRXDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "XRPUP",
+        "name": ""
+    },
+    {
+        "prefix": "XRPDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "DOTUP",
+        "name": ""
+    },
+    {
+        "prefix": "DOTDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "NBS",
+        "name": ""
+    },
+    {
+        "prefix": "WING",
+        "name": ""
+    },
+    {
+        "prefix": "SWRV",
+        "name": ""
+    },
+    {
+        "prefix": "LTCUP",
+        "name": ""
+    },
+    {
+        "prefix": "LTCDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "CREAM",
+        "name": ""
+    },
+    {
+        "prefix": "UNI",
+        "name": ""
+    },
+    {
+        "prefix": "OXT",
+        "name": ""
+    },
+    {
+        "prefix": "SUN",
+        "name": ""
+    },
+    {
+        "prefix": "AVAX",
+        "name": ""
+    },
+    {
+        "prefix": "BURGER",
+        "name": ""
+    },
+    {
+        "prefix": "BAKE",
+        "name": ""
+    },
+    {
+        "prefix": "FLM",
+        "name": ""
+    },
+    {
+        "prefix": "SCRT",
+        "name": ""
+    },
+    {
+        "prefix": "XVS",
+        "name": ""
+    },
+    {
+        "prefix": "CAKE",
+        "name": ""
+    },
+    {
+        "prefix": "SPARTA",
+        "name": ""
+    },
+    {
+        "prefix": "UNIUP",
+        "name": ""
+    },
+    {
+        "prefix": "UNIDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "ALPHA",
+        "name": ""
+    },
+    {
+        "prefix": "ORN",
+        "name": ""
+    },
+    {
+        "prefix": "UTK",
+        "name": ""
+    },
+    {
+        "prefix": "NEAR",
+        "name": ""
+    },
+    {
+        "prefix": "VIDT",
+        "name": ""
+    },
+    {
+        "prefix": "AAVE",
+        "name": ""
+    },
+    {
+        "prefix": "FIL",
+        "name": ""
+    },
+    {
+        "prefix": "SXPUP",
+        "name": ""
+    },
+    {
+        "prefix": "SXPDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "INJ",
+        "name": ""
+    },
+    {
+        "prefix": "FILDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "FILUP",
+        "name": ""
+    },
+    {
+        "prefix": "YFIUP",
+        "name": ""
+    },
+    {
+        "prefix": "YFIDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "CTK",
+        "name": ""
+    },
+    {
+        "prefix": "EASY",
+        "name": ""
+    },
+    {
+        "prefix": "AUDIO",
+        "name": ""
+    },
+    {
+        "prefix": "BCHUP",
+        "name": ""
+    },
+    {
+        "prefix": "BCHDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "BOT",
+        "name": ""
+    },
+    {
+        "prefix": "AXS",
+        "name": ""
+    },
+    {
+        "prefix": "AKRO",
+        "name": ""
+    },
+    {
+        "prefix": "HARD",
+        "name": ""
+    },
+    {
+        "prefix": "KPR",
+        "name": ""
+    },
+    {
+        "prefix": "RENBTC",
+        "name": ""
+    },
+    {
+        "prefix": "SLP",
+        "name": ""
+    },
+    {
+        "prefix": "STRAX",
+        "name": ""
+    },
+    {
+        "prefix": "UNFI",
+        "name": ""
+    },
+    {
+        "prefix": "CVP",
+        "name": ""
+    },
+    {
+        "prefix": "BCHA",
+        "name": ""
+    },
+    {
+        "prefix": "FOR",
+        "name": ""
+    },
+    {
+        "prefix": "FRONT",
+        "name": ""
+    },
+    {
+        "prefix": "ROSE",
+        "name": ""
+    },
+    {
+        "prefix": "HEGIC",
+        "name": ""
+    },
+    {
+        "prefix": "AAVEUP",
+        "name": ""
+    },
+    {
+        "prefix": "AAVEDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "PROM",
+        "name": ""
+    },
+    {
+        "prefix": "BETH",
+        "name": ""
+    },
+    {
+        "prefix": "SKL",
+        "name": ""
+    },
+    {
+        "prefix": "GLM",
+        "name": ""
+    },
+    {
+        "prefix": "SUSD",
+        "name": ""
+    },
+    {
+        "prefix": "COVER",
+        "name": ""
+    },
+    {
+        "prefix": "GHST",
+        "name": ""
+    },
+    {
+        "prefix": "SUSHIUP",
+        "name": ""
+    },
+    {
+        "prefix": "SUSHIDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "XLMUP",
+        "name": ""
+    },
+    {
+        "prefix": "XLMDOWN",
+        "name": ""
+    },
+    {
+        "prefix": "DF",
+        "name": ""
+    },
+    {
+        "prefix": "JUV",
+        "name": ""
+    },
+    {
+        "prefix": "PSG",
+        "name": ""
+    },
+    {
+        "prefix": "BVND",
+        "name": ""
+    },
+    {
+        "prefix": "GRT",
+        "name": ""
+    },
+    {
+        "prefix": "CELO",
+        "name": ""
+    },
+    {
+        "prefix": "TWT",
+        "name": ""
+    },
+    {
+        "prefix": "REEF",
+        "name": ""
+    },
+    {
+        "prefix": "OG",
+        "name": ""
+    },
+    {
+        "prefix": "ATM",
+        "name": ""
+    },
+    {
+        "prefix": "ASR",
+        "name": ""
+    },
+    {
+        "prefix": "INCH",
+        "name": ""
+    },
+    {
+        "prefix": "RIF",
+        "name": ""
+    },
+    {
+        "prefix": "BTCST",
+        "name": ""
+    },
+    {
+        "prefix": "TRU",
+        "name": ""
+    },
+    {
+        "prefix": "DEXE",
+        "name": ""
+    },
+    {
+        "prefix": "CKB",
+        "name": ""
+    },
+    {
+        "prefix": "FIRO",
+        "name": ""
+    },
+    {
+        "prefix": "LIT",
+        "name": ""
+    },
+    {
+        "prefix": "PROS",
+        "name": ""
+    },
+    {
+        "prefix": "VAI",
+        "name": ""
+    },
+    {
+        "prefix": "SFP",
+        "name": ""
+    },
+    {
+        "prefix": "FXS",
+        "name": ""
+    },
+    {
+        "prefix": "DODO",
+        "name": ""
+    },
+    {
+        "prefix": "AUCTION",
+        "name": ""
+    },
+    {
+        "prefix": "UFT",
+        "name": ""
+    },
+    {
+        "prefix": "ACM",
+        "name": ""
+    },
+    {
+        "prefix": "PHA",
+        "name": ""
+    },
+    {
+        "prefix": "TVK",
+        "name": ""
+    },
+    {
+        "prefix": "BADGER",
+        "name": ""
+    },
+    {
+        "prefix": "FIS",
+        "name": ""
+    },
+    {
+        "prefix": "OM",
+        "name": ""
+    },
+    {
+        "prefix": "POND",
+        "name": ""
+    },
+    {
+        "prefix": "ALICE",
+        "name": ""
+    },
+    {
+        "prefix": "DEGO",
+        "name": ""
+    },
+    {
+        "prefix": "BIFI",
+        "name": ""
+    },
+    {
+        "prefix": "LINA",
+        "name": ""
+    }
+]

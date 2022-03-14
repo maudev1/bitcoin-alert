@@ -1,21 +1,22 @@
 setInterval(() => {
 
-    chrome.storage.local.get(['coins'], (result) => {
+    // chrome.storage.local.get(['coins'], (result) => {
 
-        if (result.coins) {
+    //     if (result.coins) {
 
-            result.coins.forEach(alarm => {
+    //         console.table(result.coins)
 
-                GetData(alarm[0]);
+    //         result.coins.forEach(alarm => {
 
-            });
+    //             GetData(alarm[0]);
 
-        }
+    //         });
+
+    //     }
 
 
-    });
+    // });
 
-    // console.log(GetData('BTC'));
 
 }, 2000);
 
@@ -39,71 +40,69 @@ function GetData(alarm) {
         currency: 'BRL',
 
     });
+}
 
 
-    function messages() {
+function messages() {
 
-        if (request.readyState === XMLHttpRequest.DONE) {
-            if (request.status === 200) {
+    if (request.readyState === XMLHttpRequest.DONE) {
+        if (request.status === 200) {
 
-                let response = JSON.parse(request.response);
-
-
-                chrome.storage.local.get(['coins'], (result) => {
-
-                    if (result.coins) {
-
-                        result.coins.forEach(alarm => {
-
-                            if (response.ticker.last == alarm[1]) {
-
-                                console.log(response.ticker.last);
-
-                                alertMessage(`A cotação do ${alarm[0]} está em ${formatter.format(response.ticker.last)}`, true);
-
-                            }
-
-                        });
-
-                    }
+            let response = JSON.parse(request.response);
 
 
-                });
+            // chrome.storage.local.get(['coins'], (result) => {
 
-            } else {
+            //     if (result.coins) {
 
-                console.log('erro ao trazer dados...')
-            }
+            //         result.coins.forEach(alarm => {
+
+            //             if (response.ticker.last == alarm[1]) {
+
+            //                 alertMessage(`A cotação do ${alarm[0]} está em ${formatter.format(response.ticker.last)}`, true);
+
+            //             }
+
+            //         });
+
+            //     }
+
+
+            // });
+
+        } else {
+
+            console.log('erro ao trazer dados...')
         }
-
     }
 
-    function alertMessage(alarm, audio) {
+}
 
-        chrome.notifications.create('test', {
-            type: 'basic',
-            iconUrl: 'bitcoin.png',
-            title: 'Atenção',
-            message: alarm,
-            priority: 2
-        });
+function alertMessage(alarm, audio) {
 
-        if(audio == true){
-            audioNotification();
-        }
+    chrome.notifications.create('test', {
+        type: 'basic',
+        iconUrl: 'bitcoin.png',
+        title: 'Atenção',
+        message: alarm,
+        priority: 2
+    });
 
-
+    if (audio == true) {
+        audioNotification();
     }
-
-    function audioNotification() {
-       
-            var yourSound = new Audio('../sounds/mystery2.wav');
-            yourSound.play();
-        
-    }
-
 
 
 }
+
+function audioNotification() {
+
+    var yourSound = new Audio('../sounds/mystery2.wav');
+    yourSound.play();
+
+}
+
+
+
 
 
