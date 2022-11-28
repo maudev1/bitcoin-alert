@@ -1,28 +1,18 @@
 {
-    "manifest_version": 2,
-    "version": "0.0.1",
-    "name": "BitCoin Alert",
-    "description": "Extensão de alerta de valor de criptomoedas",
-    "author": "Maurício Pedro",
-    "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": ["js/script.js"]
-        }
-    ],
-    "background":{
-        "scripts":["./node_modules/localstoragedb/localstoragedb.js","js/background.js"]
-     },
-     "browser_action":{
-        "default_icon": "bitcoin.png",
-        "default_popup":"popups/index.html",
-        "default_title":"BitCoin Alert"
-     },
-     "permissions": [
+    "name": "Coin Alert",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions":[
+        "alarms",
         "notifications",
-        "storage",
-        "unlimitedStorage"
-]
-}
+        "storage"
+    ],
+    "background": {
+      "service_worker": "js/background.js"
+    },
+
+    "action":{
+        "default_title": "Drink Water Event",
+        "default_popup": "popups/index.html"
+    }
+  }

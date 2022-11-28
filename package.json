@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/maudev1/bitcoin-alert#readme",
   "dependencies": {
-    "localstoragedb": "^2.3.2"
+    "localstoragedb": "^2.3.2",
+    "sql-wasm": "^1.1.4",
+    "sqlite3": "^5.1.2"
   }
 }
