@@ -12,9 +12,8 @@ class DataBase{
     // create all tables
     createTables()
     {
-        // throw('Ok');
-        this.dataStorage.createTable("favorites", ['code', 'name', 'price', 'date']);
-        this.commit();
+        this.dataStorage.createTable("coins", ['code', 'name', 'price', 'date']);
+        this.dataStorage.commit();
     }
 
     show()
@@ -22,8 +21,11 @@ class DataBase{
         return this.dataStorage;
     }
 
-    add(){
-        return this.dataStorage    
+    add(table, code, name, price){
+        this.dataStorage.insert(table, {code:code, name:name, price:price, date:'teste'});
+        this.dataStorage.commit();
+
+        console.log('Moeda adicionada!');
     }
 
 

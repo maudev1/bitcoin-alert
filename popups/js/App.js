@@ -1,7 +1,11 @@
-// const { Database } = require("sql-wasm");
+// Load Databse
+let database = new DataBase('coin_alert');
 
 jQuery(($) => {
 
+    $('#add-coin').on('click', function(){
+        database.add('favorites', 'BTC', 'Bitcoin', '85000');
+    });
 
 
 
@@ -11,7 +15,6 @@ jQuery(($) => {
 
 });
 
-let database = new DataBase('coin_alert');
 
 // console.log(database.show());
 
