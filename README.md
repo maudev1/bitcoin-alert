@@ -6,7 +6,7 @@ Uma extensão simples para o Google Chrome que monitora cotações de criptomoed
 
 1. Clone este repositório:  
 ```bash
-git clone <link-do-repo>
+git clone [<link-do-repo>](https://github.com/maudev1/bitcoin-alert.git)
 ```
 
 2. No Chrome, acesse:  
